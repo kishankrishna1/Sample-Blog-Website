@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    display: flex;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 115vh;
+}
+.conatiner{
+    /* border: 2px solid rgb(0, 255, 110); */
+    height:110vh;
+    width:60vw ;
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "cont"
+    ;
+    grid-template-rows: 100px;
+}
+#navbar{
+    grid-area: head;
+}
+#content{
+    grid-area: cont;
+}
+
+.nav{
+    /* border: 2px solid rgb(0, 255, 110); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left a{
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+}
+.mid h1{
+    text-decoration:underline;
+    font-size: 40px;
+    align-items: center;
+
+
+}
+.right{
+    border: 1px solid rgb(47, 46, 46);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+.ct{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 20px;
+    row-gap: 30px;
+}
+.box{
+    background-color: rgba(243, 246, 248, 0.783);
+    border: 5px solid rgba(135, 135, 141, 0.5);
+    box-shadow: 7px 7px 10px  rgba(152, 152, 162, 0.5);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+}
+.blue{
+    /* border: 1px solid rgb(135, 0, 54); */
+    color: blue;
+    font-size: 15px;
+
+}
+.green{
+    color: green;
+    font-size: 15px;
+
+    /* border: 1px solid rgb(38, 20, 27); */
+}
+.topic{
+    /* border: 1px solid rgb(47, 0, 135); */
+    padding-top: 15px;
+}
+.date{
+    /* border: 1px solid rgb(0, 85, 135); */
+    color: rgb(172, 172, 172);
+    font-size: 14px;
+}
+.para{
+    /* border: 1px solid rgb(0, 135, 11); */
+    padding-top: 10px;
+    padding-bottom: 5em;
+    max-width:80%;
+
+}
+#box2 .para, #box4 .para, #box6 .para{
+    padding-bottom: 4em;
+}
+.read-more a{
+    color: rgb(55, 55, 192);
+}
+
+
+
+@media(max-width:1200px) {
+.conatiner{
+    width: 80vw;
+}
+
+}
+
+
+@media(max-width:1000px) {
+    .conatiner{
+        width: 80vw;
+    }
+
+}
+
+@media(max-width:800px) {
+    .conatiner{
+        width: 90vw;
+    }
+
+}
+@media(max-width:660px) {
+    .conatiner{
+        width: 80vw;
+    }
+    .ct{
+        grid-template-columns: 1fr;
+    }
+ 
+}
+@media(max-width:500px) {
+    .nav{
+        margin-top: 15px;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .ct{
+        margin-top: 70px;
+    }
+
+}
